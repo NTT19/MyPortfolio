@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- <link rel="stylesheet" href="assets/css/styleMusic.css"> -->
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -27,6 +28,8 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Product</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#game" class="nav__link">Game</a></li>
+
                     </ul>
                 </div>
 
@@ -176,12 +179,12 @@
                 <h2 class="section-title">Product</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="stick-hero-with-canvas/stick-hero-with-canvas/dist/index.html" class="work__img">
+                    <a href="/index.html#game" class="work__img">
                         <img src="assets/img/images.jpg" style="width: 20rem; height: 13.4rem;" alt="">
                         <br>
                         <b style="margin-left: 120px; font-size: 20px; color:#00b894">My Game</b>
                     </a>
-                    <a href="music-player-with-slider-swiper-js/music-player-with-slider-swiper-js/dist/index.html" class="work__img">
+                    <a href="/index.html" class="work__img">
                         <img src="assets/img/music.jpg" style="width: 20rem; height: 13.4rem;" alt="">
                         <br>
                         <b style="margin-left: 120px; font-size: 20px; color:#0984e3">My Music</b>
@@ -216,6 +219,36 @@
                     </form>
                 </div>
             </section>
+
+            <!--===== GAME =====-->
+            <section>
+
+                <h2 class="section-title">Game</h2>
+                <div class="back">
+                    <button id="back">
+                        <i style="font-style: italic;" class="fa-solid fa-backward"> BACK TO PAGE</i>
+                    </button>
+                </div>
+                <div class="container">
+                    
+                    <div id="score"></div>
+                    <canvas id="game" width="375" height="375"></canvas>
+                    <div id="introduction">Hold down the mouse to stretch out a stick</div>
+                    <div id="perfect">DOUBLE SCORE</div>
+                    <button id="restart">RESTART</button>
+                  </div>
+                  
+                  <script  src="assets/js/script.js"></script>
+            
+                  <script>
+                    document.getElementById('back').addEventListener('click', function() {
+                        window.location.href = '/index.html';
+                    });
+                </script>
+            </section>
+
+              <!--===== Music =====-->
+             
         </main>
 
         <!--===== FOOTER =====-->

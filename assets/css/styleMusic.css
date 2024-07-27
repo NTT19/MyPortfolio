@@ -11,6 +11,12 @@
   font-family: "Nunito", sans-serif;
 }
 
+.ccc{
+  width: 500px;
+  height: 500px;
+}
+
+
 body {
   position: relative;
   display: flex;

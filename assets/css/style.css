@@ -9,6 +9,21 @@ body {
   cursor: pointer;
 }
 
+.back{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
+#back{
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  
+}
+
 .container {
   display: flex;
   justify-content: center;
